@@ -1,0 +1,7 @@
+version: "2"
+services:
+  kiwi-webserver:
+    image: rankxaroth/rankrep:kiwi-nginx
+    ports:
+      - "8080:80"
+    command: ["nginx", "-g", "daemon off;"]
